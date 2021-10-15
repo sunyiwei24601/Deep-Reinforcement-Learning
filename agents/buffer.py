@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 
+
 class Buffer(object):
     def __init__(self, obs_dim, act_dim, size, device, gamma=0.99, lam=0.97):
         self.obs_buf = np.zeros([size, obs_dim], dtype=np.float32)
